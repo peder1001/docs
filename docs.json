@@ -28,12 +28,6 @@
     "dark": "/logo/dark-logo.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@terratwin.com"
-      }
-    ],
     "primary": {
       "type": "button",
       "label": "Back to TerraTwin",
