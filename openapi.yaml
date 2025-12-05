@@ -26,7 +26,6 @@ info:
     Air transport operations are billed as a single credit, even when the model inserts multiple stopovers automatically.
     Road sub-operations occurring as part of roll-on/roll-off ferry or train movements are included at no extra cost.
     Emissions associated with logistics hubs do not incur any credit charges.
-
   termsOfService: https://example.com/terms
   
 servers:

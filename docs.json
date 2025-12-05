@@ -5,20 +5,23 @@
   "colors": {
     "primary": "#4f39f6",
     "light": "#07C983",
-    "dark": "#15803D"
+    "dark": "#513AF7"
+  },
+  "background": {
+    "color": {
+      "light": "#F6FBFC",
+      "dark":  "#07151F"
+    },
+    "decoration": "gradient"
   },
   "favicon": "/favicon.ico",
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "TerraTwin",
+        "group": "docs",
         "openapi": "/openapi.yaml"
       }
-    ],
-    "global": {
-      "anchors": [
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light-logo.svg",
@@ -33,21 +36,9 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Account",
-      "href": "https://dashboard.terratwin.com"
+      "label": "Back to TerraTwin",
+      "href": "https://www.terratwin.com"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": { }
 }
