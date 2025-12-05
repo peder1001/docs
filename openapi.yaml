@@ -1074,40 +1074,49 @@ components:
             - `Calle de Bailén, s/n, 28071 Madrid`
       anyOf:
         - title: Coordinates
+          type: object
           required:
             - latitude
             - longitude
         - title: IATA code
+          type: object
           required:
             - iataCode
         - title: UN/LOCODE
+          type: object
           required:
             - unLoCode
         - title: Unstructured address
+          type: object
           required:
             - address
             - countryCode
         - title: Structured address
+          type: object
           required:
             - street
             - postcode
             - city
             - countryCode
         - title: Street & city
+          type: object
           required:
             - street
             - city
             - countryCode
         - title: Street & postcode
+          type: object
           required:
             - street
             - postcode
             - countryCode
         - title: Postcode
+          type: object
           required:
             - postcode
             - countryCode
         - title: City
+          type: object
           required:
             - city
             - countryCode

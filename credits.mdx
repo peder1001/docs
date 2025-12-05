@@ -1,0 +1,89 @@
+## Credits & usage
+
+TerraTwin uses a **credit-based** model for API usage. Every request consumes credits from your account, based on the work required to model and calculate your shipment.
+
+<Columns cols={2}>
+  <Card title="What is a credit?" icon="coins">
+    A credit is the basic unit of work TerraTwin charges for when modelling and calculating transport emissions.  
+    In practice: **1 shipment leg = 1 credit**, regardless of distance, mode mix, or route complexity.
+  </Card>
+  <Card title="Who owns the credits?" icon="users">
+    Credits belong to your **Account**. Today, each account is personal, but shared multi-user accounts are coming.
+    All personal keys, future service accounts, and integrations draw from the **same credit pool**.
+  </Card>
+</Columns>
+
+---
+
+### Lifecycle of credits
+
+<Steps>
+  <Step title="Sign up & get free credits">
+    Every new TerraTwin account starts with **50 courtesy credits**.
+  </Step>
+
+  <Step title="Top up with pay-as-you-go credits">
+    When your free credits run out, you can **[purchase additional credits](https://www.terratwin.com/account/credits)** on a pay-as-you-go basis.
+  </Step>
+
+  <Step title="Credits are consumed per shipment leg">
+    For each request, TerraTwin splits your shipment into **legs** – **1 leg = 1 credit**
+  </Step>
+
+</Steps>
+
+<Note>
+Credits are tracked at the **account level** and shared across all API keys – including personal keys and service accounts.
+</Note>
+
+---
+
+
+## How credit consumption works
+
+TerraTwin breaks every shipment into **legs** – single, continuous movements using one mode of transport.
+
+A leg is typically:
+
+- An **air** segment: airport → airport  
+- A **road** segment: hub → address or address → hub  
+- A **rail** segment: rail terminal → rail terminal  
+- A **sea** segment: port → port  
+
+You are charged **1 credit per leg**.
+
+<Note>
+A road leg where a truck boards a ferry and continues after landing is still treated as **one road leg → one credit**.
+</Note>
+
+---
+
+### Examples
+<Columns cols={2}>
+  <Card title="Simple flight" icon="plane">
+    You send a 100 kg shipment from **Madrid Airport (MAD)** to **Miami Airport (MIA)** as a single airport-to-airport leg.
+
+    **TerraTwin:**
+    - Fly **Madrid (MAD)** → **Miami (MIA)**
+
+    **Legs:** 1 (air only)  
+    **Credits consumed:** 1
+  </Card>
+
+  <Card title="Multi-leg, multi-modal" icon="route">
+    You send the same 100 kg shipment from a **street address in Madrid** to a **street address in Miami** in a single request.
+
+    **TerraTwin:**
+    - Drive **street address in Madrid** → **Madrid (MAD)**
+    - Fly **Madrid (MAD)** → **Miami (MIA)**
+    - Truck **Miami (MIA)** → **street address in Miami**
+
+    **Legs:** 3 (road → air → road)  
+    **Credits consumed:** 3
+    
+  </Card>
+</Columns>
+
+<Note>
+You are **not** charged credits for location lookups of any trip origins, waypoints or destinations.
+</Note>

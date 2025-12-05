@@ -40,5 +40,10 @@
       "href": "https://www.terratwin.com"
     }
   },
-  "footer": { }
+  "footer": { },
+  "integrations": {
+    "plausible": {
+        "domain": "terratwin.com"
+    }
+  }
 }

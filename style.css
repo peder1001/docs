@@ -1,6 +1,11 @@
 #content-area {
     padding-left: 4em;
+    max-width: 100%;
 }
 #sidebar {
     display: none;
+}
+
+.prose-sm {
+    font-size: 16px;
 }

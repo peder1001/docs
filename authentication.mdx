@@ -1,0 +1,40 @@
+---
+title: "API keys"
+description: "Authenticate requests to the TerraTwin API using API keys."
+---
+
+TerraTwin uses API keys for authentication.
+Right now you can create personal keys.
+Service accounts are coming soon and will give you dedicated keys per integration.
+Until then, one well-managed personal key is enough to get started.
+
+<Columns cols={2}>
+  <Card title="What you get" icon="key">
+    - A **personal key** tied to your account and user  
+    - Credits are consumed from your **credit balance** 
+    - You can revoke and regenerate it at any time  
+  </Card>
+  <Card title="Where to manage" icon="terminal">
+    - Sign in to the TerraTwin app  
+    - Go to **[Account Home](https://www.terratwin.com/account/home) → [Manage API Keys](https://www.terratwin.com/account/settings/api-key-manager)**  
+    - Generate and revoke your personal key in one place
+  </Card>
+</Columns>
+
+## Key visibility
+
+If you lose the key:
+
+- Revoke the old key in **[Manage API Keys](https://www.terratwin.com/account/settings/api-key-manager)**
+- Generate a new one
+- Update any services that use it
+
+---
+
+## Security basics
+
+Keep API keys out of logs, repos, and frontends.
+
+- Treat keys like **passwords**
+- Store them in a **secret manager** or environment variables
+- Rotate keys if you suspect exposure
