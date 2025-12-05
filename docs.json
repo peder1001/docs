@@ -48,6 +48,10 @@
         ]
       },
       {
+        "tab": "PEDER api reference",
+        "openapi": "/ai-tools/openapi.yaml"
+      },
+      {
         "tab": "API reference",
         "groups": [
           {
